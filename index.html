@@ -22,7 +22,7 @@
                 <li><a href="#Unfinished Business">Unfinished Business</a> </li>
                 <li><a href="#New Business">New Business</a></li>
                 <li><a href="#Concerns and Additional Comments">Concerns and Additional Comments</a></li>
-                <li><a href="#Forms">Forms</a></li>
+                <li><a href="#Random Form (unrelated)">Random Form (unrelated)</a></li>
             </ul>
 
         </nav>
@@ -132,13 +132,61 @@
 
         <hr>
 
-        <section id="Forms">
-            <h2>Forms</h2>
-            <fieldset>
+        <section id="Random Form (unrelated)">
+            <h2>Random Form (unrelated)</h2>
+            <form>
+
+                <fieldset>
+                    <legend>Fill-in information About your Dog</legend>
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name"> 
+                    <br>
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" name="DOB">
+                    <br>
+
+                    <label for="Title">Choose all that apply for your dog:</label>
+                    <br>
+                    <input type="checkbox" id="furry" name="furry"/>
+                    <label for="Furry">Furry</label>
+                    <input type="checkbox" id="adorable" name="adorable"/>
+                    <label for="Adorable">Adorable</label>
+                    <input type="checkbox" id="playful" name="playful"/>
+                    <label for="Playful">Playful</label>
+                    <input type="checkbox" id="Moody" name="Moody"/>
+                    <label for="Moody">Moody</label>
+                    <br>
+
+                    <fieldset>
+                        <legend>Where did you get them from?</legend>
+
+                        <input type="radio" id="Shelter/Adoption" name="source"/>
+                        <label for="Shelter/Adoption">Shelter/Adoption</label>
+                        <input type="radio" id="Breeder" name="source"/>
+                        <label for="Breeder">From a breeder as a puppy</label>
+                    </fieldset>
+
+                    <br>
+                    <label for="Describe Personality">Describe their personality:</label>
+                    <br>
+                    <textarea name="Describe Personality" id="Describe Personality" cols="30" rows="10">Describe their personality</textarea>
+                    <br>
+                    <label for="Gender-select">What is their gender?</label>
+                    <select name="Gender" id="Gender-select">
+                        <option value="">-Pick One-</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+
+                </fieldset>
                 
-            </fieldset>
+
+            </form>
 
         </section>
+        <hr>
     </main>
 
 
