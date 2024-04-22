@@ -3,7 +3,7 @@ name: CSS Custom Issue template
 about: Template for an issue centered around implementing a specific (most likley
   new) CSS feature.
 title: "[Feature]"
-labels: ''
+labels: General CSS feature
 assignees: fighterkabir
 
 ---
