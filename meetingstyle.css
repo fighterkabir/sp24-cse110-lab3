@@ -1,4 +1,7 @@
 
+html {
+    font-size: 18px;
+}
 button:active {
     box-shadow: 3px 3px 6px green;
     color: green;
@@ -129,6 +132,32 @@ form {
 header {
     height: 400px;
 }
+.dog_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dog_form input[type="date"],
+.dog_form input[type="text"],
+.dog_form input[type="checkbox"],
+.dog_form input[type="radio"],
+.dog_form textarea,
+.dog_form select,
+.dog_form datalist,
+.dog_form button {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        font-size: 25px;
+    }
+}
+
+
 
 
 
