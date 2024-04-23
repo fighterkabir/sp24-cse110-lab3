@@ -1,0 +1,23 @@
+p:hover{
+    background-color: #fff;
+}
+#Attendance_List{
+    background-color: hsl(199, 65%, 56%);
+}
+#New_Business {
+    background-color: rgb(161, 3, 252);
+}
+#Unfinished_Business{
+    background-color: color(display-p3 0.9 0.4 0.6);
+}
+.titleinfo {
+    background-color: color-mix(in lch, red 80%, black 20%);
+}
+.listofsections {
+    background-color: lightgrey;
+}
+form {
+    background-color: lightgreen;
+}
+
+
