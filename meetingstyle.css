@@ -152,10 +152,37 @@ header {
 
 @media screen and (max-width: 375px) {
 
+    /**/
     body {
         font-size: 25px;
     }
 }
+
+.AgendaItems {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.AgendaItems li {
+
+    text-align: left;
+
+}
+
+.Concerns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.Concerns li {
+    place-self: center;
+}
+
 
 
 
