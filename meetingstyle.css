@@ -58,11 +58,13 @@ p:hover{
 form {
     background-color: lightgreen;
 }
+
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
+
 
 h2 {
     text-decoration: underline;
@@ -190,6 +192,30 @@ header {
 
 .Concerns li {
     place-self: center;
+}
+
+.Reflections h3 + p {
+    color: red;
+}
+
+.Reflections h3 ~ p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+h3:has(+ p) {
+    text-decoration: underline;
+}
+
+/*
+Nested selector.
+*/
+.Reflections {
+    background-color: beige;
+    .TenHag {
+        background-color: black;
+        font-size: 1.3em;
+    }
 }
 
 
