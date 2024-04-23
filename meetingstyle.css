@@ -1,4 +1,8 @@
 
+* {
+     text-shadow: 0.25px 0.25px white;
+}
+
 html {
     font-size: 18px;
 }
@@ -36,7 +40,12 @@ p:hover{
     background-color: color(display-p3 0.9 0.4 0.6);
 }
 .titleinfo {
-    background-color: color-mix(in lch, red 80%, black 20%);
+    /*
+    Fall-back for color-mixing.
+    */
+    --main_color: color-mix(in lch, red 80%, black 20%);
+    background-color: var(--main_color, red);
+    display: inline-block;
 }
 .listofsections{
     background-color: lightgrey;
@@ -48,7 +57,6 @@ p:hover{
 }
 form {
     background-color: lightgreen;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .roboto-light {
     font-family: "Roboto", sans-serif;
@@ -120,6 +128,7 @@ h2 {
     border-radius: 20px;
     padding: 0.5cm 0.5cm 0.5cm 0.5cm;
     margin: 0.3in 0.3in 0.3in 0.3in;
+    display: inline-block;
 }
 
 form {
@@ -152,7 +161,7 @@ header {
 
 @media screen and (max-width: 375px) {
 
-    /**/
+    /*increase font-size for smaller phone screen.*/
     body {
         font-size: 25px;
     }
@@ -165,9 +174,9 @@ header {
     gap: 10px;
 }
 
-.AgendaItems li {
+.AgendaItems > li {
 
-    text-align: left;
+    text-align: center;
 
 }
 
